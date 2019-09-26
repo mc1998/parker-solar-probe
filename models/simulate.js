@@ -11,7 +11,7 @@ var suitTelemetrySchema = new mongoose.Schema({
 	p_sub: String,
 	p_suit: String,
 	t_sub:  String,
-	v_fan: String,
+// 	v_fan: String,
 	t_eva: String,
 	p_o2: String,
 	rate_o2: String,
@@ -33,7 +33,7 @@ module.exports.suitTelemetry = function(t, x){
 		p_sub: pressureSUB(),
 		p_suit: pressureSuit(),
 		t_sub: tempSub(),
-		v_fan: velocFan(x),
+// 		v_fan: velocFan(x),
 		p_o2:pressureOxygen(),
 		rate_o2:rateOxygen(),
 		cap_battery:capacityBattery(),
@@ -109,23 +109,23 @@ function tempSub(){
 	return t_sub.toFixed(0) 
 }
 
-function velocFan(x){
-	if (x === true){ 
-		if (v_fan > 2000){
-			v_fan = v_fan - 960   
-			return v_fan.toFixed(0) 
-		}
-		max = 1789 
-		min = 879
-	} else {
-		max = 40000 
-		min = 39900 
-	}
+// function velocFan(x){
+// 	if (x === true){ 
+// 		if (v_fan > 2000){
+// 			v_fan = v_fan - 960   
+// 			return v_fan.toFixed(0) 
+// 		}
+// 		max = 1789 
+// 		min = 879
+// 	} else {
+// 		max = 40000 
+// 		min = 39900 
+// 	}
 
-	v_fan = Math.random() * (max - min) + min
+// 	v_fan = Math.random() * (max - min) + min
 
-	return v_fan.toFixed(0) 
-}
+// 	return v_fan.toFixed(0) 
+// }
 
 function pressureOxygen(){
 	max = 950 
