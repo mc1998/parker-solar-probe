@@ -109,23 +109,23 @@ function tempSub(){
 	return t_sub.toFixed(0) 
 }
 
-// function velocFan(x){
-// 	if (x === true){ 
-// 		if (v_fan > 2000){
-// 			v_fan = v_fan - 960   
-// 			return v_fan.toFixed(0) 
-// 		}
-// 		max = 1789 
-// 		min = 879
-// 	} else {
-// 		max = 40000 
-// 		min = 39900 
-// 	}
+function velocFan(x){
+	if (x === true){ 
+		if (v_fan > 2000){
+			v_fan = v_fan - 960   
+			return v_fan.toFixed(0) 
+		}
+		max = 1789 
+		min = 879
+	} else {
+		max = 40000 
+		min = 39900 
+	}
 
-// 	v_fan = Math.random() * (max - min) + min
+	v_fan = Math.random() * (max - min) + min
 
-// 	return v_fan.toFixed(0) 
-// }
+	return v_fan.toFixed(0) 
+}
 
 function pressureOxygen(){
 	max = 950 
