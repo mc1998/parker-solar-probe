@@ -5,8 +5,8 @@ var bodyParser = require('body-parser')
 //initilizes the mongodb
 var mongoose = require('mongoose')
 //Database connector
-mongoose.connect('mongodb://admin:B29R233@cluster0-shard-00-00-4mutn.mongodb.net:27017,' + 
-'cluster0-shard-00-01-4mutn.mongodb.net:27017,cluster0-shard-00-02-4mutn.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true')
+mongoose.connect('mongodb://admin:B29R233@cluster0-shard-00-01-ahhcd.mongodb.net:27017,' + 
+'cluster0-shard-00-01-ahhcd.mongodb.net:27017,cluster0-shard-00-01-ahhcd.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true')
 //mongoose.connect('mongodb://localhost/spacesuit');
 
 
