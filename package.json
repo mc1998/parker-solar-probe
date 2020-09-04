@@ -15,7 +15,7 @@
     "foobar": "^1.1.0",
     "mongoose": "^5.0.12",
     "nodemon": "^1.17.3",
-    "mongodb": "^3.1.4"
+    "mongodb": "^3.1.13"
   },
   "engines": {
     "node": "^8.12.0"
